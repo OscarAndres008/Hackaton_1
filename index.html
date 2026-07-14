@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gilberto Mora | Sitio Oficial</title>
-
-<link rel="stylesheet" href="style.css" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gilberto Mora | Sitio Oficial</title>
+  <link rel="stylesheet" href="style.css" />
+  
 </head>
 <body>
 
   <!-- ============ NAV ============ -->
   <header>
     <nav>
-      <div class="logo">GILBERTO <span>MORA</span></div>
+      <div class="logo">
+        GM <span>Legacy</span>
+        <img src="IMAGENES GM/logo_GM_HD.png" alt="Gilberto Mora Logo" class="nav-logo-img">
+      </div>
       <ul class="nav-links">
-        <li><a href="#about">Acerca de</a></li>
-        <li><a href="#store">Tienda</a></li>
-        <li><a href="#contact">Contacto</a></li>
+        <li><a href="about.html">Acerca de</a></li>
+        <li><a href="trayectoria.html">Trayectoria</a></li>
+        <li><a href="tienda.html">Tienda</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="reseñas.html">Reseñas</a></li>
       </ul>
       <a href="#" class="nav-cta">Acceder</a>
     </nav>
@@ -27,20 +31,25 @@
   <section class="hero">
     <div>
       <div class="hero-eyebrow">Sitio Oficial</div>
-      <!-- Logotipo oficial debajo del título -->
-      <div class="hero-logo-container">
-        <img src="IMAGNES GM/logo GM HD.png" alt="Gilberto Mora Logo" class="hero-brand-logo">
-      </div>
-      <h1>G<br><span>M</span></h1>
+      <h1>Gilberto<br><span>Mora</span></h1>
       <p>El talento convierte inteligencia en resultados.</p>
       <div class="hero-buttons">
         <a href="#store" class="btn-primary">Ver Tienda</a>
         <a href="#about" class="btn-secondary">Conócelo</a>
       </div>
+
+      <!-- Video -->
+      <div class="hero-video-container">
+        <video width="100%" height="100%" controls preload="auto" style="display:block; object-fit:cover;">
+          <source src="IMAGENES GM/jugadas.mp4" type="video/mp4">
+          Tu navegador no soporta videos.
+        </video>
+      </div>
     </div>
-    <!-- Imagen del set o producto estrella corregida -->
+
+    <!-- Imagen principal -->
     <div class="hero-image" style="background: none;">
-      <img id="hero-slider"src="IMAGNES GM/gilberto mora.jpg" alt="Gilberto Mora" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius);">
+      <img id="hero-slider" src="IMAGENES GM/gilberto_mora.jpg" alt="Gilberto Mora" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius);">
     </div>
   </section>
 
@@ -48,7 +57,7 @@
   <section class="about" id="about">
     <div class="about-inner">
       <div class="about-image" style="background: none;">
-        <img src="IMAGNES GM/poner-imagen-aqui.jpg" alt="Gilberto Mora Gear" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius);">
+        <img src="IMAGENES GM/moritaformado.jpg" alt="Gilberto Mora Gear" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius);">
       </div>
       <div class="about-text">
         <h2 class="section-title">Trayectoria y Excelencia</h2>
@@ -66,43 +75,43 @@
   <section class="store" id="store">
     <div class="store-header">
       <h2 class="section-title">Colección Oficial</h2>
-      <a href="#">Ver todo →</a>
+      <a href="Tienda.html">Ver todo →</a>
     </div>
     <div class="store-grid">
-      <!-- Producto 1: Chamarra 1 -->
+      <!-- Producto 1 -->
       <div class="product-card">
-        <div class="product-image" style="background: none;">
-          <img src="IMAGNES GM/Image20260713122113.png" alt="Uniforme Gala México">
+        <div class="product-image">
+          <img src="IMAGENES GM/Image20260713122113.png" alt="Uniforme Gala México">
         </div>
         <div class="product-info">
           <h4>Uniforme Gala Edición Especial</h4>
           <div class="price">$1,299.00</div>
         </div>
       </div>
-      <!-- Producto 2: Pans 1 -->
+      <!-- Producto 2 -->
       <div class="product-card">
-        <div class="product-image" style="background: none;">
-          <img src="IMAGNES GM/pans_1.png" alt="Pans Premium">
+        <div class="product-image">
+          <img src="IMAGENES GM/pans_1.png" alt="Pans Premium">
         </div>
         <div class="product-info">
           <h4>Pans Premium Pro</h4>
           <div class="price">$1,099.00</div>
         </div>
       </div>
-      <!-- Producto 3: Chamarra 2 -->
+      <!-- Producto 3 -->
       <div class="product-card">
-        <div class="product-image" style="background: none;">
-          <img src="IMAGNES GM/Image20260713122118.png" alt="Uniforme Exotico México">
+        <div class="product-image">
+          <img src="IMAGENES GM/Image20260713122104.png" alt="Uniforme Exótico México">
         </div>
         <div class="product-info">
-          <h4>Uniforme Exotico México</h4>
+          <h4>Uniforme Exótico México</h4>
           <div class="price">$1,199.00</div>
         </div>
       </div>
-      <!-- Producto 4: Pans 2 -->
+      <!-- Producto 4 -->
       <div class="product-card">
-        <div class="product-image" style="background: none;">
-          <img src="IMAGNES GM/pans_2.jpg" alt="Pans Invertido">
+        <div class="product-image">
+          <img src="IMAGENES GM/pans_2.jpg" alt="Pans Invertido">
         </div>
         <div class="product-info">
           <h4>Pans Premium Invertido</h4>
@@ -122,8 +131,11 @@
       <div class="footer-col">
         <h5>Navegación</h5>
         <ul>
-          <li><a href="#about">Acerca de</a></li>
-          <li><a href="#store">Tienda</a></li>
+          <li><a href="about.html">Acerca de</a></li>
+          <li><a href="trayectoria.html">Trayectoria</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="reseñas.html">Reseñas</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -136,39 +148,38 @@
     </div>
     <div class="footer-bottom">
       <span>© 2026 Gilberto Mora. Todos los derechos reservados.</span>
-      <span>Hecho con dedicación </span>
+      <span>Hecho con dedicación</span>
     </div>
   </footer>
-<!-- ============ SCRIPT DEL CARRUSEL AUTOMÁTICO ============ -->
+
+  <!-- ============ SCRIPT DEL CARRUSEL AUTOMÁTICO ============ -->
   <script>
-    // Lista con las 5 rutas de tus imágenes reales
-    const imagenes = [
-      "IMAGNES GM/gilberto mora.jpg",
-      "IMAGNES GM/gilberto mora campeon.png",
-      "IMAGNES GM/gilberto mora cancha.jpg",
-      "IMAGNES GM/gilberto mora entrene 1.jpg",
-      "IMAGNES GM/gilberto mora entrene 2.jpg"
-    ];
+  const imagenes = [
+    "IMAGENES GM/gilberto_mora.jpg",
+    "IMAGENES GM/gilberto_mora_campeon.png",
+    "IMAGENES GM/gilberto_mora_cancha.jpg",
+    "IMAGENES GM/gilberto_mora_entrene_1.jpg",
+    "IMAGENES GM/gilberto_mora_entrene_2.jpg"
+  ];
 
-    let indiceActual = 0;
-    const imagenHero = document.getElementById("hero-slider");
+  let indiceActual = 0;
+  const imagenHero = document.getElementById("hero-slider");
 
-    function rotarImagenes() {
-      // 1. Inicia el desvanecimiento (opacidad a 0)
-      imagenHero.classList.add("fade-out");
+  function rotarImagenes() {
+    imagenHero.classList.add("fade-out");
+    setTimeout(() => {
+      indiceActual = (indiceActual + 1) % imagenes.length;
+      imagenHero.src = imagenes[indiceActual];
+      imagenHero.classList.remove("fade-out");
+    }, 500);
+  }
 
-      // 2. Espera 500ms (lo que dura la transición) para cambiar la foto y volver a mostrarla
-      setTimeout(() => {
-        indiceActual = (indiceActual + 1) % imagenes.length;
-        imagenHero.src = imagenes[indiceActual];
-        
-        // 3. Quita la clase para que regrese la opacidad a 1 de forma fluida
-        imagenHero.classList.remove("fade-out");
-      }, 500); 
-    }
+  setInterval(rotarImagenes, 3000);
+</script>
 
-    // Cambiar cada 3 segundos (3000 milisegundos)
-    setInterval(rotarImagenes, 3000);
-  </script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
