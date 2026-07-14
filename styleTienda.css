@@ -411,34 +411,66 @@ footer {
 }
 
 
-.producto-card{
-    border: none;
-    border-radius: 15px;
-    overflow: hidden;
-    transition: .3s;
-    box-shadow: 0 10px 25px rgba(0,0,0,.12);
+/* Contenedor con desplazamiento */
+.productos-scroll{
+    display:flex;
+    gap:25px;
+    overflow-x:auto;
+    padding-bottom:20px;
+    scroll-behavior:smooth;
 }
 
-.producto-card:hover{
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0,0,0,.2);
+/* Barra de desplazamiento */
+.productos-scroll::-webkit-scrollbar{
+    height:8px;
 }
 
-.producto-card img{
-    height: 260px;
-    object-fit: cover;
+.productos-scroll::-webkit-scrollbar-track{
+    background:#ddd;
+    border-radius:20px;
 }
 
-.card-title{
-    font-weight: 700;
+.productos-scroll::-webkit-scrollbar-thumb{
+    background:#d4a441;
+    border-radius:20px;
 }
 
-.precio{
-    font-size: 1.4rem;
-    color: #d4a441;
-    font-weight: bold;
+/* Tarjetas */
+.producto{
+    min-width:280px;
+    flex-shrink:0;
+
+    background:#000000;
+    border-radius:15px;
+    overflow:hidden;
+
+    transition:.3s;
 }
 
-.producto-card .btn{
-    border-radius: 10px;
+.producto:hover{
+    transform:translateY(-8px);
+}
+
+.producto img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    background:#f3f3f3;
+}
+
+.producto h5{
+    margin:15px;
+    font-weight:700;
+}
+
+.producto p{
+    margin:0 15px;
+    color:#d4a441;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.producto .btn{
+    margin:15px;
+    width:calc(100% - 30px);
 }
