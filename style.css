@@ -175,6 +175,7 @@
     margin-bottom:20px;
   }
 
+
   .about-text p{ color:var(--text-muted); margin-bottom:24px; }
 
   .stats{
@@ -286,3 +287,162 @@
     .nav-links{ display:none; } /* pendiente: menú móvil */
     .hero h1{ font-size:44px; }
   }
+
+  /*==================================================*/
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("imagnes gm/imggm.png"); /* Cambia por tu imagen */
+    background-size: cover;
+    background-position: center 20%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.70);
+}
+
+.hero-content{
+    position: relative;
+    z-index: 2;
+    max-width: 750px;
+    padding: 20px;
+}
+
+.subtitulo{
+    display: inline-block;
+    color: #d8a21b;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.hero-content h1{
+    font-size: 72px;
+    font-weight: 800;
+    color: #f4c542;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+.hero-content p{
+    color: #f2f2f2;
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 650px;
+    margin: auto;
+}
+
+.card-about h3 {
+    color:#D4AF37;
+}
+
+.card-about h3 {
+    color:#D4AF37;
+
+}
+
+.about-text p{
+    font-size: 17px;
+    line-height: 1.9;
+    color: white;
+    text-align: justify;
+    max-width: 700px;
+    margin-bottom: 35px;
+}
+.about-text h2{
+    
+    color: #D4AF37;
+    
+}
+
+
+/* Seccion de developes*/
+.developers{
+
+    
+    padding:100px 8%;
+    background: #123330;
+}
+
+.developers-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.developers-title span{
+    color:#77622c;
+    font-weight:bold;
+    letter-spacing:4px;
+}
+
+.developers-title h2{
+    font-size:42px;
+    margin:15px 0;
+    color:white;
+}
+
+.developers-title p{
+    max-width:700px;
+    margin:auto;
+    color:#666;
+    line-height:1.8;
+}
+
+.developers-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+    justify-content: center;
+    gap: 25px;
+}
+
+.developer-card{
+    background: white;
+    border-radius:15px;
+    overflow:hidden;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.developer-card:hover{
+    transform:translateY(-10px);
+}
+
+.developer-card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+
+.developer-card h3{
+    margin-top:20px;
+    color:#222;
+}
+
+.developer-card h4{
+    color:#d4a017;
+    margin:10px 0;
+}
+
+.developer-card p{
+    padding:0 20px 25px;
+    color:#666;
+    line-height:1.6;
+}
+

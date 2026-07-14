@@ -4,298 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gilberto Mora | Sitio Oficial</title>
-<style>
 
-  /* ============ TOKENS ============ */
-  :root{
-    --bg-primary:#0b1f1c;      /* verde casi negro, fondo base */
-    --bg-secondary:#123330;    /* verde profundo, secciones alternas */
-    --bg-card:#173d38;         /* tarjetas / bloques */
-    --accent-gold:#d4a441;     /* dorado, CTA principal */
-    --accent-teal:#2fae8f;     /* verde acento, detalles/links */
-    --text-primary:#f4f2ea;
-    --text-muted:#9db3ae;
-    --border-soft:rgba(244,242,234,0.08);
+<link rel="stylesheet" href="style.css" />
 
-    --font-display:"Bebas Neue", "Oswald", sans-serif; /* títulos grandes, look deportivo */
-    --font-body:"Inter", "Segoe UI", sans-serif;
-
-    --radius:8px;
-    --max-width:1180px;
-  }
-
-  *{ box-sizing:border-box; margin:0; padding:0; }
-
-  body{
-    background:var(--bg-primary);
-    color:var(--text-primary);
-    font-family:var(--font-body);
-    line-height:1.5;
-  }
-
-  img{ max-width:100%; display:block; }
-
-  a{ color:inherit; text-decoration:none; }
-
-  .container{
-    max-width:var(--max-width);
-    margin:0 auto;
-    padding:0 24px;
-  }
-
-  /* ============ NAV ============ */
-  header{
-    position:sticky; top:0; z-index:50;
-    background:rgba(11,31,28,0.9);
-    backdrop-filter:blur(8px);
-    border-bottom:1px solid var(--border-soft);
-  }
-
-  nav{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:16px 24px;
-    max-width:var(--max-width);
-    margin:0 auto;
-  }
-
-  .logo{
-    font-family:var(--font-display);
-    font-size:22px;
-    letter-spacing:2px;
-  }
-  .logo span{ color:var(--accent-gold); }
-
-  .nav-links{
-    display:flex;
-    gap:32px;
-    list-style:none;
-    font-size:14px;
-    text-transform:uppercase;
-    letter-spacing:1px;
-    color:var(--text-muted);
-  }
-  .nav-links a:hover{ color:var(--accent-gold); }
-
-  .nav-cta{
-    background:var(--accent-gold);
-    color:#0b1f1c;
-    padding:10px 20px;
-    border-radius:var(--radius);
-    font-weight:600;
-    font-size:14px;
-  }
-
-  /* ============ HERO ============ */
-  .hero{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    align-items:center;
-    gap:40px;
-    padding:80px 24px;
-    max-width:var(--max-width);
-    margin:0 auto;
-  }
-
-  .hero-eyebrow{
-    color:var(--accent-teal);
-    text-transform:uppercase;
-    letter-spacing:3px;
-    font-size:13px;
-    margin-bottom:16px;
-  }
-
-  .hero h1{
-    font-family:var(--font-display);
-    font-size:64px;
-    line-height:0.95;
-    letter-spacing:1px;
-  }
-  .hero h1 span{ color:var(--accent-gold); }
-
-  .hero p{
-    color:var(--text-muted);
-    margin:20px 0 32px;
-    max-width:420px;
-  }
-
-  .hero-buttons{ display:flex; gap:16px; }
-
-  .btn-primary{
-    background:var(--accent-gold);
-    color:#0b1f1c;
-    padding:14px 28px;
-    border-radius:var(--radius);
-    font-weight:600;
-    display:inline-block;
-  }
-  .btn-secondary{
-    border:1px solid var(--border-soft);
-    color:var(--text-primary);
-    padding:14px 28px;
-    border-radius:var(--radius);
-    display:inline-block;
-  }
-
-  .hero-image{
-    background:var(--bg-card);
-    border-radius:var(--radius);
-    aspect-ratio:4/5;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:var(--text-muted);
-    font-size:13px;
-    text-align:center;
-  }
-
-  /* ============ SECCIÓN: ACERCA DE ============ */
-  .about{
-    background:var(--bg-secondary);
-    padding:80px 24px;
-  }
-
-  .about-inner{
-    max-width:var(--max-width);
-    margin:0 auto;
-    display:grid;
-    grid-template-columns:0.9fr 1.1fr;
-    gap:48px;
-    align-items:center;
-  }
-
-  .about-image{
-    background:var(--bg-card);
-    border-radius:var(--radius);
-    aspect-ratio:1/1;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:var(--text-muted);
-    font-size:13px;
-  }
-
-  .section-title{
-    font-family:var(--font-display);
-    font-size:32px;
-    letter-spacing:1px;
-    margin-bottom:20px;
-  }
-
-  .about-text p{ color:var(--text-muted); margin-bottom:24px; }
-
-  .stats{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:16px;
-  }
-
-  .stat{
-    background:var(--bg-card);
-    border-radius:var(--radius);
-    padding:16px;
-    text-align:center;
-  }
-  .stat strong{
-    display:block;
-    font-family:var(--font-display);
-    font-size:24px;
-    color:var(--accent-gold);
-  }
-  .stat span{ font-size:12px; color:var(--text-muted); }
-
-  /* ============ TIENDA OFICIAL ============ */
-  .store{
-    padding:80px 24px;
-    max-width:var(--max-width);
-    margin:0 auto;
-  }
-
-  .store-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-end;
-    margin-bottom:32px;
-  }
-
-  .store-header a{ color:var(--accent-teal); font-size:14px; }
-
-  .store-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:24px;
-  }
-
-  .product-card{
-    background:var(--bg-card);
-    border-radius:var(--radius);
-    overflow:hidden;
-  }
-
-  .product-image{
-    aspect-ratio:1/1;
-    background:var(--bg-secondary);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:var(--text-muted);
-    font-size:12px;
-  }
-
-  .product-info{ padding:16px; }
-  .product-info h4{ font-size:14px; margin-bottom:6px; }
-  .product-info .price{ color:var(--accent-gold); font-weight:600; font-size:14px; }
-
-  /* ============ FOOTER ============ */
-  footer{
-    background:var(--bg-secondary);
-    border-top:1px solid var(--border-soft);
-    padding:56px 24px 24px;
-  }
-
-  .footer-inner{
-    max-width:var(--max-width);
-    margin:0 auto;
-    display:grid;
-    grid-template-columns:1.4fr 1fr 1fr;
-    gap:40px;
-    margin-bottom:40px;
-  }
-
-  .footer-col h5{
-    font-size:14px;
-    text-transform:uppercase;
-    letter-spacing:1px;
-    margin-bottom:16px;
-    color:var(--text-muted);
-  }
-
-  .footer-col ul{ list-style:none; }
-  .footer-col li{ margin-bottom:10px; font-size:14px; color:var(--text-muted); }
-  .footer-col li a:hover{ color:var(--accent-gold); }
-
-  .footer-bottom{
-    max-width:var(--max-width);
-    margin:0 auto;
-    padding-top:24px;
-    border-top:1px solid var(--border-soft);
-    font-size:13px;
-    color:var(--text-muted);
-    display:flex;
-    justify-content:space-between;
-  }
-
-  /* ============ RESPONSIVE ============ */
-  @media (max-width:900px){
-    .hero, .about-inner{ grid-template-columns:1fr; }
-    .store-grid{ grid-template-columns:repeat(2,1fr); }
-    .footer-inner{ grid-template-columns:1fr; }
-    .nav-links{ display:none; } /* pendiente: menú móvil */
-    .hero h1{ font-size:44px; }
-  }
-
-</style>
 </head>
 <body>
 
@@ -306,7 +17,6 @@
       <ul class="nav-links">
         <li><a href="#about">Acerca de</a></li>
         <li><a href="#store">Tienda</a></li>
-        <li><a href="#news">Noticias</a></li>
         <li><a href="#contact">Contacto</a></li>
       </ul>
       <a href="#" class="nav-cta">Acceder</a>
@@ -317,27 +27,36 @@
   <section class="hero">
     <div>
       <div class="hero-eyebrow">Sitio Oficial</div>
-      <h1>GILBERTO<br><span>MORA</span></h1>
-      <p>[ Frase / lema del jugador aquí. Reemplaza con la cita real, ej. "El talento convierte en inteligencia en el resultado." ]</p>
+      <!-- Logotipo oficial debajo del título -->
+      <div class="hero-logo-container">
+        <img src="IMAGNES GM/logo GM HD.png" alt="Gilberto Mora Logo" class="hero-brand-logo">
+      </div>
+      <h1>G<br><span>M</span></h1>
+      <p>El talento convierte inteligencia en resultados.</p>
       <div class="hero-buttons">
-        <a href="#store" class="btn-primary">Tienda oficial</a>
+        <a href="#store" class="btn-primary">Ver Tienda</a>
         <a href="#about" class="btn-secondary">Conócelo</a>
       </div>
     </div>
-    <div class="hero-image">[ Imagen principal / foto de acción ]</div>
+    <!-- Imagen del set o producto estrella corregida -->
+    <div class="hero-image" style="background: none;">
+      <img id="hero-slider"src="IMAGNES GM/gilberto mora.jpg" alt="Gilberto Mora" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius);">
+    </div>
   </section>
 
   <!-- ============ ACERCA DE ============ -->
   <section class="about" id="about">
     <div class="about-inner">
-      <div class="about-image">[ Foto retrato ]</div>
+      <div class="about-image" style="background: none;">
+        <img src="IMAGNES GM/poner-imagen-aqui.jpg" alt="Gilberto Mora Gear" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius);">
+      </div>
       <div class="about-text">
-        <h2 class="section-title">Acerca de Gilberto Mora</h2>
-        <p>[ Bio corta: trayectoria, club actual, selección, logros destacados. 2-3 líneas. ]</p>
+        <h2 class="section-title">Trayectoria y Excelencia</h2>
+        <p>Representando la nueva ola del talento y la pasión en el fútbol. Cada elemento de esta línea oficial ha sido diseñado buscando un balance perfecto entre alto rendimiento, comodidad y estilo único.</p>
         <div class="stats">
-          <div class="stat"><strong>00</strong><span>Goles</span></div>
-          <div class="stat"><strong>00</strong><span>Asistencias</span></div>
-          <div class="stat"><strong>00</strong><span>Partidos</span></div>
+          <div class="stat"><strong>10</strong><span>Dorsal</span></div>
+          <div class="stat"><strong>100%</strong><span>Calidad</span></div>
+          <div class="stat"><strong>2026</strong><span>Edición</span></div>
         </div>
       </div>
     </div>
@@ -346,36 +65,48 @@
   <!-- ============ TIENDA OFICIAL ============ -->
   <section class="store" id="store">
     <div class="store-header">
-      <h2 class="section-title">Tienda Oficial</h2>
+      <h2 class="section-title">Colección Oficial</h2>
       <a href="#">Ver todo →</a>
     </div>
     <div class="store-grid">
+      <!-- Producto 1: Chamarra 1 -->
       <div class="product-card">
-        <div class="product-image">[ Producto 1 ]</div>
+        <div class="product-image" style="background: none;">
+          <img src="IMAGNES GM/Image20260713122113.png" alt="Uniforme Gala México">
+        </div>
         <div class="product-info">
-          <h4>Nombre del producto</h4>
-          <div class="price">$0.00</div>
+          <h4>Uniforme Gala Edición Especial</h4>
+          <div class="price">$1,299.00</div>
         </div>
       </div>
+      <!-- Producto 2: Pans 1 -->
       <div class="product-card">
-        <div class="product-image">[ Producto 2 ]</div>
+        <div class="product-image" style="background: none;">
+          <img src="IMAGNES GM/pans_1.png" alt="Pans Premium">
+        </div>
         <div class="product-info">
-          <h4>Nombre del producto</h4>
-          <div class="price">$0.00</div>
+          <h4>Pans Premium Pro</h4>
+          <div class="price">$1,099.00</div>
         </div>
       </div>
+      <!-- Producto 3: Chamarra 2 -->
       <div class="product-card">
-        <div class="product-image">[ Producto 3 ]</div>
+        <div class="product-image" style="background: none;">
+          <img src="IMAGNES GM/Image20260713122118.png" alt="Uniforme Exotico México">
+        </div>
         <div class="product-info">
-          <h4>Nombre del producto</h4>
-          <div class="price">$0.00</div>
+          <h4>Uniforme Exotico México</h4>
+          <div class="price">$1,199.00</div>
         </div>
       </div>
+      <!-- Producto 4: Pans 2 -->
       <div class="product-card">
-        <div class="product-image">[ Producto 4 ]</div>
+        <div class="product-image" style="background: none;">
+          <img src="IMAGNES GM/pans_2.jpg" alt="Pans Invertido">
+        </div>
         <div class="product-info">
-          <h4>Nombre del producto</h4>
-          <div class="price">$0.00</div>
+          <h4>Pans Premium Invertido</h4>
+          <div class="price">$1,099.00</div>
         </div>
       </div>
     </div>
@@ -386,14 +117,13 @@
     <div class="footer-inner">
       <div class="footer-col">
         <div class="logo">GILBERTO <span>MORA</span></div>
-        <p style="color:var(--text-muted); font-size:14px; margin-top:12px;">[ Descripción corta / mensaje de cierre ]</p>
+        <p style="color:var(--text-muted); font-size:14px; margin-top:12px;">Estilo, rendimiento y pasión dentro de la cancha.</p>
       </div>
       <div class="footer-col">
         <h5>Navegación</h5>
         <ul>
           <li><a href="#about">Acerca de</a></li>
           <li><a href="#store">Tienda</a></li>
-          <li><a href="#news">Noticias</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -401,15 +131,44 @@
         <ul>
           <li><a href="#">Instagram</a></li>
           <li><a href="#">X / Twitter</a></li>
-          <li><a href="#">TikTok</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <span>© 2026 Gilberto Mora. Todos los derechos reservados.</span>
-      <span>Hecho con dedicación ⚽</span>
+      <span>Hecho con dedicación </span>
     </div>
   </footer>
+<!-- ============ SCRIPT DEL CARRUSEL AUTOMÁTICO ============ -->
+  <script>
+    // Lista con las 5 rutas de tus imágenes reales
+    const imagenes = [
+      "IMAGNES GM/gilberto mora.jpg",
+      "IMAGNES GM/gilberto mora campeon.png",
+      "IMAGNES GM/gilberto mora cancha.jpg",
+      "IMAGNES GM/gilberto mora entrene 1.jpg",
+      "IMAGNES GM/gilberto mora entrene 2.jpg"
+    ];
 
+    let indiceActual = 0;
+    const imagenHero = document.getElementById("hero-slider");
+
+    function rotarImagenes() {
+      // 1. Inicia el desvanecimiento (opacidad a 0)
+      imagenHero.classList.add("fade-out");
+
+      // 2. Espera 500ms (lo que dura la transición) para cambiar la foto y volver a mostrarla
+      setTimeout(() => {
+        indiceActual = (indiceActual + 1) % imagenes.length;
+        imagenHero.src = imagenes[indiceActual];
+        
+        // 3. Quita la clase para que regrese la opacidad a 1 de forma fluida
+        imagenHero.classList.remove("fade-out");
+      }, 500); 
+    }
+
+    // Cambiar cada 3 segundos (3000 milisegundos)
+    setInterval(rotarImagenes, 3000);
+  </script>
 </body>
 </html>
