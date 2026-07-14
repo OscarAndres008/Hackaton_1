@@ -7,7 +7,24 @@ Incluye secciones de presentación, trayectoria, tienda, reseñas y contacto.
 
 ## 📂 Estructura del proyecto
 
-
+├── index.html              # Página principal
+├── about.html              # Sección "Acerca de"
+├── trayectoria.html        # Sección "Trayectoria"
+├── tienda.html             # Tienda oficial
+├── contacto.html           # Formulario de contacto
+├── reseñas.html            # Página de reseñas
+│
+├── style.css               # Estilos globales
+├── styles.css              # Estilos adicionales
+├── styleTienda.css         # Estilos específicos de la tienda
+├── reseñas.css             # Estilos específicos de reseñas
+│
+├── tienda.js               # Lógica de la tienda
+├── reseñas.js              # Lógica de reseñas
+├── validacionForm.js       # Validación del formulario de contacto
+│
+├── IMAGENES GM/            # Carpeta de imágenes y logotipos
+└── README.md               # Este archivo
 ---
 
 ## 🚀 Tecnologías utilizadas
@@ -15,7 +32,7 @@ Incluye secciones de presentación, trayectoria, tienda, reseñas y contacto.
 - **HTML5** → Estructura de las páginas.
 - **CSS3** → Estilos personalizados, variables y diseño responsivo.
 - **JavaScript (ES6)** → Funcionalidades dinámicas (tienda, reseñas, validación).
-- **Responsive Design** → Adaptación a móviles y pantallas pequeñas.
+- **Bootstrap 5** → Framework CSS para diseño responsivo y componentes listos.
 
 ---
 
@@ -39,6 +56,11 @@ Incluye secciones de presentación, trayectoria, tienda, reseñas y contacto.
 - **Tienda oficial** con productos en tarjetas y carrusel destacado.
 - **Formulario de contacto** con validación en `validacionForm.js`.
 - **Sistema de reseñas** con estrellas interactivas y modal.
+- **Bootstrap** integrado para:
+  - Grid system responsivo.
+  - Navbar adaptable a móviles.
+  - Botones y modales estilizados.
+  - Clases utilitarias para espaciado y tipografía.
 
 ---
 
@@ -47,7 +69,7 @@ Incluye secciones de presentación, trayectoria, tienda, reseñas y contacto.
 - El logo en la barra de navegación está enlazado a `index.html` para regresar siempre al inicio.
 - Los estilos están modularizados en diferentes archivos CSS para mantener orden.
 - Se recomienda usar un servidor local (ej. VS Code Live Server) para evitar problemas de rutas.
-
----
-
-
+- Bootstrap se incluye vía CDN en el `<head>` de cada página:
+  ```html
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
