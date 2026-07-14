@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tienda Oficial | Gilberto Mora</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+    />
+
+    <!-- CSS-->
+    <link rel="stylesheet" href="styleTienda.css" />
+</head>
+
+<body>
+    <!-- ================= NAVBAR ================= -->
+    <!-- Se integrará posteriormente -->
+
+    <!-- ================= HERO ================= -->
+
+    <section id="hero" class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h1>Tienda Oficial</h1>
+
+            <p>Descubre la colección oficial inspirada en Gilberto Mora.</p>
+
+            <a href="#destacados" class="btn btn-warning"> Comprar Ahora </a>
+          </div>
+
+          <div class="col-lg-6 text-center">
+            <!-- Imagen Hero -->
+
+            <img src="assets/images/hero.png" class="img-fluid" alt="Hero" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CATEGORÍAS ================= -->
+
+    <section id="categorias" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Categorías</h2>
+    
+
+        <div class="row g-4">
+          <div class="col-6 col-md-4 col-lg-2">
+            <button class="btn btn-outline-warning w-100" 
+            onclick="document.getElementById('balones').scrollIntoView({behavior: 'smooth'})"
+            >Balones</button>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <button class="btn btn-outline-warning w-100"
+            onclick="document.getElementById('playeras').scrollIntoView({behavior: 'smooth'})"
+            >Playeras</button>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <button class="btn btn-outline-warning w-100"
+            onclick="document.getElementById('sudaderas').scrollIntoView({behavior: 'smooth'})"
+            >Sudaderas</button>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <button class="btn btn-outline-warning w-100"
+            onclick="document.getElementById('conjuntos').scrollIntoView({behavior: 'smooth'})"
+            >Conjuntos</button>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <button class="btn btn-outline-warning w-100"
+            onclick="document.getElementById('pants').scrollIntoView({behavior: 'smooth'})"
+            >Pants</button>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <button class="btn btn-outline-warning w-100"
+            onclick="document.getElementById('accesorios').scrollIntoView({behavior: 'smooth'})"
+            >Accesorios</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRODUCTOS DESTACADOS ================= -->
+
+    <section id="destacados" class="py-5">
+      <div class="container">
+        <h2 class="mb-4">Productos Destacados</h2>
+
+        <!-- Carousel Bootstrap -->
+
+        <div id="carouselDestacados"
+     class="carousel slide"
+     data-bs-ride="carousel">
+
+    <!-- Indicadores -->
+    <div class="carousel-indicators">
+
+        <button
+            type="button"
+            data-bs-target="#carouselDestacados"
+            data-bs-slide-to="0"
+            class="active">
+        </button>
+
+        <button
+            type="button"
+            data-bs-target="#carouselDestacados"
+            data-bs-slide-to="1">
+        </button>
+
+        <button
+            type="button"
+            data-bs-target="#carouselDestacados"
+            data-bs-slide-to="2">
+        </button>
+
+    </div>
+
+    <!-- Imágenes -->
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <img src="IMAGNES GM/balon1.jpeg"
+                 class="d-block w-100"
+                 alt="Balón">
+        </div>
+
+        <div class="carousel-item">
+            <img src="IMAGNES GM/chamarra_1.png"
+                 class="d-block w-100"
+                 alt="Chamarra">
+        </div>
+
+        <div class="carousel-item">
+            <img src="IMAGNES GM/close_up_of_a_premium_shin_guard_with_a_high_gloss_metallic_forest_green_finish.png"
+                 class="d-block w-100"
+                 alt="Espinillera">
+        </div>
+
+    </div>
+
+    <!-- Flecha anterior -->
+    <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselDestacados"
+        data-bs-slide="prev">
+
+        <span class="carousel-control-prev-icon"></span>
+
+    </button>
+
+    <!-- Flecha siguiente -->
+    <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselDestacados"
+        data-bs-slide="next">
+
+        <span class="carousel-control-next-icon"></span>
+
+    </button>
+
+</div>
+
+    <!-- ================= BALONES ================= -->
+
+    <section id="balones" class="py-5">
+      <div class="container">
+        <h2 class="mb-4">Balones</h2>
+
+        <div class="row g-4" id="balones-container"></div>
+      </div>
+    </section>
+
+    <!-- ================= PLAYERAS ================= -->
+
+    <section id="playeras" class="py-5">
+      <div class="container">
+        <h2 class="mb-4">Playeras</h2>
+
+        <div class="row g-4" id="playeras-container"></div>
+      </div>
+    </section>
+
+    <!-- ================= SUDADERAS ================= -->
+
+    <section id="sudaderas" class="py-5">
+      <div class="container">
+        <h2 class="mb-4">Sudaderas</h2>
+
+        <div class="row g-4" id="sudaderas-container"></div>
+      </div>
+    </section>
+
+    <!-- ================= CONJUNTOS ================= -->
+
+    <section id="conjuntos" class="py-5">
+      <div class="container">
+        <h2 class="mb-4">Conjuntos</h2>
+
+        <div class="row g-4" id="conjuntos-container"></div>
+      </div>
+    </section>
+
+    <!-- ================= PANTS ================= -->
+
+    <section id="pants" class="py-5">
+      <div class="container">
+        <h2 class="mb-4">Pants</h2>
+
+        <div class="row g-4" id="pants-container"></div>
+      </div>
+    </section>
+
+    <!-- ================= ACCESORIOS ================= -->
+
+    <section id="accesorios" class="py-5">
+      <div class="container">
+        <h2 class="mb-4">Artículos Varios</h2>
+
+        <div class="row g-4" id="accesorios-container"></div>
+      </div>
+    </section>
+
+    <!-- ================= BENEFICIOS ================= -->
+
+    <section id="beneficios" class="py-5">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-3">
+            <h5>Envíos</h5>
+
+            <p>A todo México.</p>
+          </div>
+
+          <div class="col-md-3">
+            <h5>Pago Seguro</h5>
+
+            <p>Compra protegida.</p>
+          </div>
+
+          <div class="col-md-3">
+            <h5>Calidad</h5>
+
+            <p>Productos oficiales.</p>
+          </div>
+
+          <div class="col-md-3">
+            <h5>Garantía</h5>
+
+            <p>Compra con confianza.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <section id="footer">
+      <footer id="contact">
+        <div class="footer-inner">
+          <div class="footer-col">
+            <div class="logo">GILBERTO <span>MORA</span></div>
+            <p
+              style="
+                color: var(--text-muted);
+                font-size: 14px;
+                margin-top: 12px;
+              "
+            >
+              [ Descripción corta / mensaje de cierre ]
+            </p>
+          </div>
+          <div class="footer-col">
+            <h5>Navegación</h5>
+            <ul>
+              <li><a href="#about">Acerca de</a></li>
+              <li><a href="#store">Tienda</a></li>
+              <li><a href="#news">Noticias</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h5>Síguelo</h5>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">X / Twitter</a></li>
+              <li><a href="#">TikTok</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Gilberto Mora. Todos los derechos reservados.</span>
+          <span>Hecho con dedicación </span>
+        </div>
+      </footer>
+    </section>
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS -->
+
+    <script src="assets/js/store.js"></script>
+  </body>
+</html>
