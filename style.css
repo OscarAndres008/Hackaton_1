@@ -446,3 +446,13 @@
     line-height:1.6;
 }
 
+<<<<<<< Updated upstream
+=======
+.modal-footer .btn-primary:hover {
+    filter: brightness(1.08);
+    color: #0b1f1c;
+}
+
+
+ 
+>>>>>>> Stashed changes
