@@ -5,8 +5,9 @@ Incluye secciones de presentación, trayectoria, tienda, reseñas y contacto.
 
 ---
 
-## 📂 Estructura del proyecto
-
+```text
+GM-Legacy/
+│
 ├── index.html              # Página principal
 ├── about.html              # Sección "Acerca de"
 ├── trayectoria.html        # Sección "Trayectoria"
@@ -20,19 +21,12 @@ Incluye secciones de presentación, trayectoria, tienda, reseñas y contacto.
 ├── reseñas.css             # Estilos específicos de reseñas
 │
 ├── tienda.js               # Lógica de la tienda
-├── reseñas.js              # Lógica de reseñas
-├── validacionForm.js       # Validación del formulario de contacto
+├── reseñas.js              # Funcionalidad de reseñas
+├── validacionForm.js       # Validación del formulario
 │
-├── IMAGENES GM/            # Carpeta de imágenes y logotipos
-└── README.md               # Este archivo
----
-
-## 🚀 Tecnologías utilizadas
-
-- **HTML5** → Estructura de las páginas.
-- **CSS3** → Estilos personalizados, variables y diseño responsivo.
-- **JavaScript (ES6)** → Funcionalidades dinámicas (tienda, reseñas, validación).
-- **Bootstrap 5** → Framework CSS para diseño responsivo y componentes listos.
+├── IMAGENES GM/            # Imágenes, logotipos y recursos gráficos
+└── README.md               # Documentación del proyecto
+```
 
 ---
 
