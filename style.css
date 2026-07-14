@@ -860,3 +860,10 @@ section.container.text-center p {
     filter: brightness(1.08);
     color: #0b1f1c;
 }
+
+.modal-footer .btn-primary:hover {
+    filter: brightness(1.08);
+    color: #0b1f1c;
+}
+
+
