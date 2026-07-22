@@ -7,22 +7,22 @@ Incluye secciones de presentación, trayectoria, tienda, reseñas y contacto.
 
 ```text
 GM-Legacy/
-│
-├── index.html              # Página principal
-├── about.html              # Sección "Acerca de"
-├── trayectoria.html        # Sección "Trayectoria"
-├── tienda.html             # Tienda oficial
-├── contacto.html           # Formulario de contacto
-├── reseñas.html            # Página de reseñas
-│
-├── style.css               # Estilos globales
-├── styles.css              # Estilos adicionales
-├── styleTienda.css         # Estilos específicos de la tienda
-├── reseñas.css             # Estilos específicos de reseñas
-│
-├── tienda.js               # Lógica de la tienda
-├── reseñas.js              # Funcionalidad de reseñas
-├── validacionForm.js       # Validación del formulario
+html/
+│  ├── index.html              # Página principal
+│  ├── about.html              # Sección "Acerca de"
+│  ├── trayectoria.html        # Sección "Trayectoria"
+│  ├── tienda.html             # Tienda oficial
+│  ├── contacto.html           # Formulario de contacto
+│  ├── reseñas.html            # Página de reseñas
+css/
+│   ├── style.css               # Estilos globales
+│   ├── styles.css              # Estilos adicionales
+│   ├── styleTienda.css         # Estilos específicos de la tienda
+│   ├── reseñas.css             # Estilos específicos de reseñas
+js/
+│   ├── tienda.js               # Lógica de la tienda
+│   ├── reseñas.js              # Funcionalidad de reseñas
+│   ├── validacionForm.js       # Validación del formulario
 │
 ├── IMAGENES GM/            # Imágenes, logotipos y recursos gráficos
 └── README.md               # Documentación del proyecto
